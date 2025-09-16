@@ -20,7 +20,7 @@ public class Circulo {
 	
 	public void calcularPerimetro() {
 		
-		perimetro = 2 * PI * area;
+		perimetro = 2 * PI * radio;
 		System.out.println("El perimetro del circulo es: "+perimetro);
 	}
 
