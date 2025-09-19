@@ -17,10 +17,10 @@ public class LeerFichero {
 		String rutaFichero = "C:\\Users\\Usuario\\Desktop\\datos.txt";
 		List <Integer> datos = new ArrayList<Integer>();
 		
-		try (BufferedReader lectora = new BufferedReader(new FileReader(rutaFichero))) {
+		try (BufferedReader lector = new BufferedReader(new FileReader(rutaFichero))) {
 			
 			String linea;
-			while ((linea = lectora.readLine()) != null) {
+			while ((linea = lector.readLine()) != null) {
 				int numero = Integer.parseInt(linea);
 				datos.add(numero);
 			}
